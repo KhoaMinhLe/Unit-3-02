@@ -1,0 +1,31 @@
+//Created by: Khoa Le
+//This program is factorial but with recursion.
+
+import java.util.*;
+
+public class Unit302 {
+
+	public static void main(String[] args) {
+		
+		int userinput = 0;
+		System.out.println("Enter a number to find the factorial.");
+		Scanner input = new Scanner(System.in);
+		userinput = input.nextInt();
+		
+		System.out.println("The factorial number for " + userinput + " is " + fact(userinput) + ".");
+
+	}
+	
+	public static int fact(int userinput) {
+		
+		if (userinput == 0) {
+			return 1;
+			
+		} else {
+			return userinput * fact(userinput - 1);
+			
+		}
+		
+	}
+
+}
